@@ -1,4 +1,4 @@
-SELECT customers.FirstName, customers.LastName, tracks.Milliseconds
+SELECT DISTINCT customers.FirstName, customers.LastName, tracks.Milliseconds
 FROM customers
 JOIN invoices ON customers.CustomerId = invoices.CustomerId
 JOIN invoice_items ON invoices.InvoiceId = invoice_items.InvoiceId
